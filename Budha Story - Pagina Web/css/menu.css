@@ -1,0 +1,18 @@
+
+.cor{
+  color: #fff!important;
+  background-color:#633d1c !important;
+}
+
+.sidebar{
+  height: 100%;
+width: 200px;
+background-color: #905d30;
+position: fixed!important;
+z-index: 1;
+overflow: auto;
+}
+
+.menuitem: hover {
+  color:red;
+}

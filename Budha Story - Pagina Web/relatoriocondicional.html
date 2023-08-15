@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Relatório</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--===============================================================================================-->
+  <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <!--===============================================================================================-->
+</head>
+<body>
+  <nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand text-white">
+      <img src="images\icone_budha.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Budha Store
+    </a>
+  </nav>
+  <div class="container" >
+    <h1>Relatório de Condicional</h1>
+    <form class="formulario" method="post" action="">
+      <div class="form-row">
+        <div class=" col-10 col-sm-10 col-md-11 gg">
+          <div class="wrap-input100 validate-input" data-validate="Campo inválido">
+           <!-- Combobox -->
+            Funcionário
+            <select class="input100"  name="BuscarFuncionario" style="outline:none;border:none">
+              <option value="nada"></option>
+              <option value="babi">Bárbara</option>
+              <option value="babi">Ana</option>
+              <option value="babi">Cami</option>
+              <option value="babi">Michele</option>
+            </select>
+            <span class="focus-input100" data-placeholder=""></span>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class=" col-10 col-sm-10 col-md-11 gg">
+          <div class="wrap-input100 validate-input" data-validate="Campo inválido">
+          <!-- Combobox -->
+                Cliente
+            <select class="input100"  name="Buscarcliente" style="outline:none;border:none">
+              <option value="nada"></option>
+              <option value="babi">Bárbara</option>
+              <option value="babi">Ana</option>
+              <option value="babi">Cami</option>
+              <option value="babi">Michele</option>
+            </select>
+            <span class="focus-input100" data-placeholder=""></span>
+          </div>
+        </div>
+      </div>
+      <div class="form-row outroGG">
+            <div class="col-md-6 gg">
+              <div class="form-group wrap-input100">
+                Status
+                <select class="input100"  name="Status" style="outline:none;border:none">
+                  <option value="nada"></option>
+                  <option value="babi">Bárbara</option>
+                  <option value="babi">Ana</option>
+                  <option value="babi">Cami</option>
+                  <option value="babi">Michele</option>
+                </select>
+                <span class="focus-input100" data-placeholder=""></span>
+              </div>
+              </div>
+              <div class="col-md-3 gg">
+                <div class="form-group wrap-input100">
+                  <label style="font-size:12px;margin-bottom:0px">Data de Envio</label>
+                  <input class="input100" type="date" name="DataE">
+                  <span class="focus-input100" data-placeholder=""></span>
+                </div>
+              </div>
+              <div class="col-md-3 gg">
+                <div class="form-group wrap-input100">
+                  <label style="font-size:12px;margin-bottom:0px">Data de Devolução</label>
+                  <input class="input100" type="date" name="DataD">
+                  <span class="focus-input100" data-placeholder=""></span>
+                </div>
+              </div>
+      </div>
+      <div class="form-row">
+                  <div class="col-md-12 gg">
+                    <div class="form-group spanMode">
+                      <label>Modo do Relatório:</label>
+                      <span style="padding-left: 0.5em;">
+                        <input type="radio" class="radio" name="modo" value="resumido" id="resumido" checked />
+                        <label for="resumido">Resumido </label>
+                        <input type="radio" class="radio" name="modo" value="completo" id="completo" />
+                        <label for="completo">Completo </label>
+                      </span>
+                    </div>
+                  </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="container-login100-form-btn">
+            <div class="wrap-login100-form-btn">
+              <div class="login100-form-bgbtn"></div>
+              <button type="submit" class="login100-form-btn" >
+                Gerar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="container-login100-form-btn">
+            <div class="wrap-login100-form-btn">
+              <div class="login100-form-bgbtn"></div>
+              <button class="login100-form-btn" onclick="voltar()">
+                Voltar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!--===============================================================================================-->
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/animsition/js/animsition.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/bootstrap/js/popper.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/select2/select2.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/countdowntime/countdowntime.js"></script>
+  <!--===============================================================================================-->
+  <script src="js/main.js"></script>
+  <style>
+    .outroGG{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .form-group{
+      min-height: 69px;
+    }
+  </style>
+  <script>
+  function voltar() {
+    window.history.back();
+  }
+  </script>
+</body>
+</html>
